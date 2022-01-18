@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ex2_Question 4</title>
+  </head>
+  <body>
+    <header>
+      <h2>Register</h2>
+      <p><i>Please <b>fill in this form</b> to create an account</i></p>
+      <br>
+    </header>
+    <form action="/action_page.php" method="post">
+
+      <label for="fullname"><span>Full name</span> <span style="color: red">*</span></label><br>
+      <input type="text" name="fullname" placeholder="Input your fullname..."autofocus autocompletes required><br><br>
+
+      <label for="username"><span>Username</span><span style="color: red">*</span></label><br>
+      <input type="text" name="username" placeholder="Input your username..."autofocus autocompletes required ><br><br>
+
+      <label for="password"><span>Password</span><span style="color: red">*</span></label><br>
+      <input type="password" name="password" placeholder="Input your password..."autofocus autocompletes required><br><br>
+
+      <label for="email"><span>Email</span><span style="color: red">*</span></label><br>
+      <input type="email" name="email" placeholder="Input your email..."autofocus autocompletes required><br><br>
+
+      <label for="phone"><span>Telephone number</span><span style="color: red">*</span></label><br>
+      <input type="text" name="phone" placeholder="Input your telephone number..."autofocus autocompletes required><br><br>
+
+      <label for="inObject"><span>Input Object:</span></label><br>
+      <input type="radio" name="inObject" >Student
+      <input type="radio" name="inObject" >Teacher<br><br>
+
+      <label for="favorite"><span>Favorite:</span></label><br>
+      <input type="checkbox" name="favorite" >Badminton
+      <input type="checkbox" name="favorite" >Volleyball
+      <input type="checkbox" name="favorite" >Football<br><br>
+
+      <label for="address"><span>Address</span><span style="color: red">*</span></label><br>
+        <select  name="address" >
+          <option value="bacgiang" selected >Bắc Giang</option>
+          <option value="hanoi">Hà nội</option>
+          <option value="hcm">Tp Hồ Chí Minh</option>
+          <option value="angiang">An Giang</option>
+          <option value="dongthap">Đồng Tháp</option>
+          <option value="hue">Huế</option>
+        </select>
+        <br><br>
+
+      <label for="brithday"><span>Brithday</span><span style="color: red">*</span></label><br>
+      <input type="date" name="brithday" min="1900-01-01" max="2021-12-01" ><br><br>
+
+      <label for="picture"><span>Your picture</span><span style="color: red">*</span></label><br>
+      <input type="file" name="picture" ><br><br>
+
+      <input type="submit">
+
+    </form>
+  </body>
+</html>
